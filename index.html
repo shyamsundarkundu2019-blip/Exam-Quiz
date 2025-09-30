@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📖 কুইজ সিস্টেম</h1>
+
+  <div id="controls">
+    <select id="subject">
+      <option value="">-- বিষয় নির্বাচন করো --</option>
+      <option value="english.json">English</option>
+      <option value="math.json">Math</option>
+      <option value="physics.json">Physics</option>
+      <!-- চাইলে আরও subject যোগ করতে পারো -->
+    </select>
+
+    <div id="chapterBox" style="display:none;">
+      <select id="chapter"></select>
+    </div>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div id="controls-nav" style="display:none;">
+    <button id="prev">⬅ পূর্ববর্তী</button>
+    <button id="next">পরবর্তী ➡</button>
+    <button id="submit">✅ জমা দাও</button>
+  </div>
+
+  <div id="timer"></div>
+  <div id="result"></div>
+
+  <!-- 🎨 থিম বাটন -->
+  <button id="themeToggle">🎨 Change Theme</button>
+
+  <canvas id="scoreChart" width="200" height="200"></canvas>
+  <canvas id="barChart" width="400" height="200"></canvas>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
